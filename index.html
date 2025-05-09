@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News Central</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lavishly+Yours&family=Pacifico&family=Qwigley&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>News Central</h1>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search news..." />
+        <button onclick="searchNews()">Search</button>
+    </div>
+
+    <nav>
+      <button onclick="loadNews('general', 'us')">India</button>
+      <button onclick="loadNews('sports', 'us')">Sports</button>
+      <button onclick="loadNews('entertainment', 'in')">Entertainment</button>
+      <button onclick="loadNews('world')">World</button>
+      <button onclick="loadNews('technology', 'us')">Technology</button>
+    </nav>
+    
+  </header>
+
+  <main id="news-container">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; made with ❤️ by Krishna Keshri</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
